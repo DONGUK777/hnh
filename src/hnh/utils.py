@@ -1,23 +1,6 @@
 import requests
 import json
 
-#def get_api():
-#    headers = {
-#            'accept': 'application/json',
-#            }
-#    files = {'file': (f'{file_path}', open(f'{file_path}', 'rb'), 'image/png'),}
-#    response = requests.post('http://localhost:8000/uploadfile/', headers=headers, files=files)
-
-    # print(response.text)
-    # {"Hello":[{"label":"hot dog","score":0.5382884740829468},
-    # {"label":"not hot dog","score":0.4617115557193756}]}
-#    r = json.loads(response.text)
-#    data = r["Hello"]
-    # print(data)
-    # [{'label': 'hot dog', 'score': 0.5382884740829468},
-    # {'label': 'not hot dog', 'score': 0.4617115557193756}]
-#    return data
-
 def get_max_label(p):
     max_score = 0
     max_label = ""
